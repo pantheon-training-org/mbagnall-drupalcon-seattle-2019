@@ -1,0 +1,40 @@
+uuid: a15a6353-ad8c-4c55-a3ce-3836c6052a7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address
+    - node.type.store_locations
+  module:
+    - address
+id: node.store_locations.field_address
+field_name: field_address
+entity_type: node
+bundle: store_locations
+label: Address
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    country_code: US
+    langcode: ''
+    given_name: ''
+    family_name: ''
+    organization: ''
+    address_line1: ''
+    address_line2: ''
+    locality: ''
+    administrative_area: ''
+    postal_code: ''
+    additional_name: null
+    sorting_code: null
+    dependent_locality: null
+default_value_callback: ''
+settings:
+  available_countries:
+    US: US
+  langcode_override: ''
+  field_overrides: {  }
+  fields: {  }
+field_type: address
